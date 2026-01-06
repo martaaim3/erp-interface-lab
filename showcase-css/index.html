@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP Interface Lab</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="brand">
+            <img src="img/logo.png" alt="Grupo SIM" />
+            <span>ERP Interface Lab</span>
+        </div>
+        <nav class="nav">
+            <a href="#logo">Inicio</a>
+            <a href="#modulos">Modulos</a>
+            <a href="#ui">UI</a>
+            <a href="#contacto">Contacto</a>
+            <a class="btn" href="https://github.com/martaaim3" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="logo" class="logo">
+            <div class="container">
+                <p class="logo-badge">
+                    <i class="fa-solid fa-briefcase"></i>
+                    Abierto a prácticas profesionales · ERP / UI / Datos
+                </p>
+                <div class="logo-actions">
+                    <a class="ui-btn ui-btn--primary" href="#modulos">
+                        <i class="fa-solid fa-layer-group"></i> Ver módulos
+                    </a>
+                    <a class="ui-btn ui-btn--ghost" href="#kpi">
+                        <i class="fa-solid fa-chart-pie"></i> Ver dashboard
+                    </a>
+                </div>
+
+
+                <h1>ERP Interface Lab</h1>
+                <p>Prototipo de interfaz para sistemas ERP, orientado a módulos funcionales, experiencia de usuario y
+                    visualización de datos en entornos empresariales.</p>
+            </div>
+        </section>
+
+        <section id="modulos" class="section">
+            <div class="container">
+                <h2>Módulos del ERP</h2>
+                <div class="modulos1">
+                    <article class="modulos-carta">
+                        <i class="fa-solid fa-chart-line modulo-icon"></i>
+                        <h3 class="modulo-titulo">Ventas</h3>
+                        <span class="modulo-tag">Área Comercial</span>
+                        <p class="modulo-desc">Pedidos, albaranes, facturas, abc ventas y seguimiento comercial.</p>
+                    </article>
+                    <article class="modulos-carta">
+                        <i class="fa-solid fa-cart-shopping modulo-icon"></i>
+                        <h3 class="modulo-titulo">Compras</h3>
+                        <span class="modulo-tag">Operaciones</span>
+                        <p class="modulo-desc">Pedidos, albaranes, facturas, facturas acreedor y listados</p>
+                    </article>
+                    <article class="modulos-carta">
+                        <i class="fa-solid fa-wallet modulo-icon"></i>
+                        <h3 class="modulo-titulo">Tesorería</h3>
+                        <span class="modulo-tag">Finanzas y asesorías</span>
+                        <p class="modulo-desc">Cartera, Remesas, Impagados, impuestos, listados iva, cuentas anuales</p>
+                    </article>
+                    <article class="modulos-carta">
+                        <i class="fa-solid fa-industry modulo-icon"></i>
+                        <h3 class="modulo-titulo">Producción</h3>
+                        <span class="modulo-tag">Operaciones y logística</span>
+                        <p class="modulo-desc">PMP, Listados y cargas, Órdenes de producción </p>
+                    </article>
+                    <article class="modulos-carta">
+                        <i class="fa-solid fa-handshake modulo-icon"></i>
+                        <h3 class="modulo-titulo">Terceros</h3>
+                        <span class="modulo-tag">Datos Maestros</span>
+                        <p class="modulo-desc">Terceros, Clientes, Proveedores, Acreedores, Agentes, Agrupaciones </p>
+                    </article>
+                    <article class="modulos-carta">
+                        <i class="fa-solid fa-warehouse modulo-icon"></i>
+                        <h3 class="modulo-titulo">Empresa</h3>
+                        <span class="modulo-tag">Gestión empresarial</span>
+                        <p class="modulo-desc">Formas de pago, Datos de empresa, Campaña, Ejercicios</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="ui" class="section section--alt">
+            <div class="container">
+                <h2>Estados de interfaz y experiencia de usuario</h2>
+                <div class="ui-kit">
+                    <div class="ui-block">
+                        <h3>Acciones</h3>
+                        <div class="ui-row">
+                            <a class="ui-btn ui-btn--primary" href="#">Nueva venta</a>
+                            <a class="ui-btn ui-btn--secondary" href="#">Registrar compra</a>
+                            <a class="ui-btn ui-btn--ghost" href="#">Ver tesorería</a>
+                        </div>
+                    </div>
+
+                    <div class="ui-block">
+                        <h3>Formulario</h3>
+                        <label class="field">
+                            <span>Buscar tercero</span>
+                            <input type="text" placeholder="Ej: Proveedor García S.L." />
+                        </label>
+
+                        <label class="field">
+                            <span>Notas</span>
+                            <textarea rows="3" placeholder="Observaciones..."></textarea>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kpi" class="section">
+            <div class="container">
+                <h2>Indicadores clave de negocio (KPI)</h2>
+
+                <div class="kpi-grid">
+                    <article class="kpi-card">
+                        <p class="kpi-label">Ventas hoy</p>
+                        <p class="kpi-value">€ 12.480</p>
+                        <div class="kpi-bar"><span style="--w: 72%"></span></div>
+                    </article>
+
+                    <article class="kpi-card">
+                        <p class="kpi-label">Compras pendientes</p>
+                        <p class="kpi-value">18</p>
+                        <div class="kpi-bar"><span style="--w: 45%"></span></div>
+                    </article>
+
+                    <article class="kpi-card">
+                        <p class="kpi-label">Tesorería (saldo)</p>
+                        <p class="kpi-value">€ 84.120</p>
+                        <div class="kpi-bar"><span style="--w: 60%"></span></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section">
+            <div class="container">
+                <h2>Contacto</h2>
+                <p>Disponible para prácticas en entornos ERP / Data / UI. ¿Lo comentamos?</p>
+                <a class="ui-btn ui-btn--primary" href="mailto:martagruposim@gmail.com">Contactar</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 ERP Interface Lab</p>
+
+        <div class="footer-links">
+            <a href="https://github.com/martaaim3" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/marta-ib%C3%A1%C3%B1ez-marco-59250820a/" target="_blank"
+                rel="noopener">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="mailto:tuemail@correo.com">
+                <i class="fa-solid fa-envelope"></i> Email
+            </a>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
